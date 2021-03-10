@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Smart Campus</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/static/style.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <h2>Values of 423 room</h2>
+    </header>
+
+    {{#packs}}
+        <section>
+            <nav>
+                <ul>
+                    <h3>{{time}}</h3>
+                </ul>
+            </nav>
+
+            <article>
+                {{#temperature}}
+                    <b>Temperature: {{value}} - {{measure}}</b>
+                {{/temperature}}
+                <hr>
+                {{#lighting}}
+                    <b>Lighting: {{value}} - {{measure}}</b>
+                {{/lighting}}
+            </article>
+            <hr>
+        </section>
+    {{/packs}}
+
+    <footer>
+        <p>Copyright &copy; 2021 Voldemar</p>
+    </footer>
+</body>
+</html>

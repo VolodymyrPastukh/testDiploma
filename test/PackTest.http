@@ -1,0 +1,57 @@
+POST http://127.0.0.1:8080/packs
+Content-Type: application/json
+
+{
+  "time": null,
+  "temperature": {
+    "value": 14,
+    "measure": "C"
+  },
+  "lighting": {
+    "value": 543,
+    "measure": "L"
+  }
+}
+
+
+###
+POST http://127.0.0.1:8080/packs
+Content-Type: application/json
+
+{
+  "time": null,
+  "temperature": {
+    "value": -3,
+    "measure": "C"
+  },
+  "lighting": {
+    "value": 233,
+    "measure": "L"
+  }
+}
+
+###
+POST http://127.0.0.1:8080/packs
+Content-Type: application/json
+
+{
+  "time": "10-03-2021 04:48:07",
+  "temperature": {
+    "value": 34,
+    "measure": "C"
+  },
+  "lighting": {
+    "value": 948,
+    "measure": "L"
+  }
+}
+
+
+###
+GET http://127.0.0.1:8080/packsJSON
+Accept: application/json
+
+###
+GET http://127.0.0.1:8080/
+Accept: application/json
+
