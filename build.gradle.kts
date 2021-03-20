@@ -9,6 +9,7 @@ plugins {
     application
     kotlin("jvm") version "1.4.21"
     id("org.jetbrains.kotlin.plugin.serialization") version "1.4.21"
+    id("com.github.johnrengelman.shadow") version "5.0.0"
 }
 
 group = "com.lp"
@@ -28,6 +29,16 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
     kotlinOptions {
         freeCompilerArgs = listOf("-Xjsr305=strict")
         jvmTarget = "1.8"
+    }
+}
+
+tasks.withType<Jar> {
+    manifest {
+        attributes(
+            mapOf(
+                "Main-Class" to application.mainClassName
+            )
+        )
     }
 }
 
