@@ -11,7 +11,7 @@ class PackFactory(private val db: MongoCollection<Pack>) {
         val result = Pack(
             getTime(),
             pack.temperature,
-            pack.lighting
+            pack.light
         )
         db.insertOne(result)
     }

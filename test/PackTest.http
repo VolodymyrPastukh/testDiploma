@@ -46,9 +46,17 @@ Content-Type: application/json
   }
 }
 
+###
+POST http://127.0.0.1:8080/flame
+Content-Type: application/json
+
 
 ###
 GET http://127.0.0.1:8080/packsJSON
+Accept: application/json
+
+###
+GET http://127.0.0.1:8080/flameJSON
 Accept: application/json
 
 ###

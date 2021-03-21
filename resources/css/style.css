@@ -97,3 +97,17 @@ footer {
 }
 
 
+#footer {
+    width: 100%;
+    clear: both;
+    padding: 10px;
+    background-color: #000dff;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+

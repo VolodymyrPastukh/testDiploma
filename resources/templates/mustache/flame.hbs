@@ -8,10 +8,10 @@
 </head>
 <body>
     <header>
-        <h2>Values of 423 room</h2>
+        <h2>Flame in 423 room</h2>
     </header>
 
-    {{#packs}}
+    {{#flame}}
         <section>
             <nav>
                 <ul>
@@ -20,17 +20,11 @@
             </nav>
 
             <article>
-                {{#temperature}}
-                    <b>Temperature: {{value}} - {{measure}}</b>
-                {{/temperature}}
-                <hr>
-                {{#light}}
-                    <b>Light: {{value}} - {{measure}}</b>
-                {{/light}}
+                <h2>{{state}}-ALARM| flame was detected</h2>
             </article>
-            <hr>
+
         </section>
-    {{/packs}}
+    {{/flame}}
 
 </body>
 <div id="footer">
