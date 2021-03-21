@@ -15,6 +15,10 @@ services:
   database:
       restart: always
       image: mongo:latest
+      environment:
+        - MONGO_INITDB_ROOT_USERNAME=campus
+        - MONGO_INITDB_ROOT_PASSWORD=detitoorki
+        - MONGO_INITDB_DATABASE=test
       ports:
         - 27017:27017
       expose:
